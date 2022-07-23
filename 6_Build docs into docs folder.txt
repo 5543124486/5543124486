@@ -1,0 +1,7 @@
+2022-06-22T09:31:01.9277535Z ##[group]Run pdoc ./belvo --docformat google -o docs
+2022-06-22T09:31:01.9277886Z [36;1mpdoc ./belvo --docformat google -o docs[0m
+2022-06-22T09:31:01.9332982Z shell: /usr/bin/bash -e {0}
+2022-06-22T09:31:01.9333223Z env:
+2022-06-22T09:31:01.9333480Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.5/x64
+2022-06-22T09:31:01.9333792Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.5/x64/lib
+2022-06-22T09:31:01.9334204Z ##[endgroup]

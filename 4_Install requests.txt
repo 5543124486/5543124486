@@ -1,0 +1,23 @@
+2022-06-22T09:30:57.5856782Z ##[group]Run pip install requests
+2022-06-22T09:30:57.5857195Z [36;1mpip install requests[0m
+2022-06-22T09:30:57.5922180Z shell: /usr/bin/bash -e {0}
+2022-06-22T09:30:57.5922440Z env:
+2022-06-22T09:30:57.5922721Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.5/x64
+2022-06-22T09:30:57.5923065Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.5/x64/lib
+2022-06-22T09:30:57.5923321Z ##[endgroup]
+2022-06-22T09:30:58.6827758Z Collecting requests
+2022-06-22T09:30:58.7519149Z   Downloading requests-2.28.0-py3-none-any.whl (62 kB)
+2022-06-22T09:30:58.7652773Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.8/62.8 kB 5.4 MB/s eta 0:00:00
+2022-06-22T09:30:58.8072909Z Collecting idna<4,>=2.5
+2022-06-22T09:30:58.8191535Z   Downloading idna-3.3-py3-none-any.whl (61 kB)
+2022-06-22T09:30:58.8283066Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.2/61.2 kB 16.1 MB/s eta 0:00:00
+2022-06-22T09:30:58.8682051Z Collecting certifi>=2017.4.17
+2022-06-22T09:30:58.8806033Z   Downloading certifi-2022.6.15-py3-none-any.whl (160 kB)
+2022-06-22T09:30:58.8929827Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.2/160.2 kB 16.7 MB/s eta 0:00:00
+2022-06-22T09:30:58.9550711Z Collecting urllib3<1.27,>=1.21.1
+2022-06-22T09:30:58.9670523Z   Downloading urllib3-1.26.9-py2.py3-none-any.whl (138 kB)
+2022-06-22T09:30:58.9739148Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.0/139.0 kB 34.8 MB/s eta 0:00:00
+2022-06-22T09:30:59.0144497Z Collecting charset-normalizer~=2.0.0
+2022-06-22T09:30:59.0261997Z   Downloading charset_normalizer-2.0.12-py3-none-any.whl (39 kB)
+2022-06-22T09:30:59.1064117Z Installing collected packages: urllib3, idna, charset-normalizer, certifi, requests
+2022-06-22T09:30:59.3884751Z Successfully installed certifi-2022.6.15 charset-normalizer-2.0.12 idna-3.3 requests-2.28.0 urllib3-1.26.9

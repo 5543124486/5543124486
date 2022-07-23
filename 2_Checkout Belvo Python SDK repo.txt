@@ -1,0 +1,233 @@
+2022-06-22T09:30:56.3204260Z ##[group]Run actions/checkout@v2
+2022-06-22T09:30:56.3204629Z with:
+2022-06-22T09:30:56.3204880Z   repository: belvo-finance/belvo-python
+2022-06-22T09:30:56.3205512Z   token: ***
+2022-06-22T09:30:56.3205702Z   ssh-strict: true
+2022-06-22T09:30:56.3205931Z   persist-credentials: true
+2022-06-22T09:30:56.3206149Z   clean: true
+2022-06-22T09:30:56.3206329Z   fetch-depth: 1
+2022-06-22T09:30:56.3206516Z   lfs: false
+2022-06-22T09:30:56.3206710Z   submodules: false
+2022-06-22T09:30:56.3206915Z   set-safe-directory: true
+2022-06-22T09:30:56.3207131Z ##[endgroup]
+2022-06-22T09:30:56.5972805Z Syncing repository: belvo-finance/belvo-python
+2022-06-22T09:30:56.5975926Z ##[group]Getting Git version info
+2022-06-22T09:30:56.5977792Z Working directory is '/home/runner/work/belvo-python/belvo-python'
+2022-06-22T09:30:56.5978379Z [command]/usr/bin/git version
+2022-06-22T09:30:56.6132774Z git version 2.36.1
+2022-06-22T09:30:56.6134437Z ##[endgroup]
+2022-06-22T09:30:56.6176737Z Temporarily overriding HOME='/home/runner/work/_temp/96d2f510-24ae-41f5-94f6-d5e6abd3821e' before making global git config changes
+2022-06-22T09:30:56.6177474Z Adding repository directory to the temporary git global config as a safe directory
+2022-06-22T09:30:56.6178078Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/belvo-python/belvo-python
+2022-06-22T09:30:56.6214767Z Deleting the contents of '/home/runner/work/belvo-python/belvo-python'
+2022-06-22T09:30:56.6220394Z ##[group]Initializing the repository
+2022-06-22T09:30:56.6224767Z [command]/usr/bin/git init /home/runner/work/belvo-python/belvo-python
+2022-06-22T09:30:56.6314286Z hint: Using 'master' as the name for the initial branch. This default branch name
+2022-06-22T09:30:56.6315153Z hint: is subject to change. To configure the initial branch name to use in all
+2022-06-22T09:30:56.6316942Z hint: of your new repositories, which will suppress this warning, call:
+2022-06-22T09:30:56.6317819Z hint: 
+2022-06-22T09:30:56.6319210Z hint: 	git config --global init.defaultBranch <name>
+2022-06-22T09:30:56.6319661Z hint: 
+2022-06-22T09:30:56.6320753Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2022-06-22T09:30:56.6321354Z hint: 'development'. The just-created branch can be renamed via this command:
+2022-06-22T09:30:56.6321742Z hint: 
+2022-06-22T09:30:56.6322572Z hint: 	git branch -m <name>
+2022-06-22T09:30:56.6331993Z Initialized empty Git repository in /home/runner/work/belvo-python/belvo-python/.git/
+2022-06-22T09:30:56.6391984Z [command]/usr/bin/git remote add origin https://github.com/belvo-finance/belvo-python
+2022-06-22T09:30:56.6447167Z ##[endgroup]
+2022-06-22T09:30:56.6447868Z ##[group]Disabling automatic garbage collection
+2022-06-22T09:30:56.6455487Z [command]/usr/bin/git config --local gc.auto 0
+2022-06-22T09:30:56.6496104Z ##[endgroup]
+2022-06-22T09:30:56.6496762Z ##[group]Setting up auth
+2022-06-22T09:30:56.6508703Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-06-22T09:30:56.6550881Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-06-22T09:30:56.6964528Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-06-22T09:30:56.7002897Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
+2022-06-22T09:30:56.7317676Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2022-06-22T09:30:56.7362541Z ##[endgroup]
+2022-06-22T09:30:56.7363398Z ##[group]Fetching the repository
+2022-06-22T09:30:56.7371163Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +879334b633b99fb3eb4f2ffe5e0897814c2dda51:refs/remotes/origin/master
+2022-06-22T09:30:57.1076654Z remote: Enumerating objects: 90, done.        
+2022-06-22T09:30:57.1077831Z remote: Counting objects:   1% (1/90)        
+2022-06-22T09:30:57.1079598Z remote: Counting objects:   2% (2/90)        
+2022-06-22T09:30:57.1080010Z remote: Counting objects:   3% (3/90)        
+2022-06-22T09:30:57.1080456Z remote: Counting objects:   4% (4/90)        
+2022-06-22T09:30:57.1080904Z remote: Counting objects:   5% (5/90)        
+2022-06-22T09:30:57.1083412Z remote: Counting objects:   6% (6/90)        
+2022-06-22T09:30:57.1083877Z remote: Counting objects:   7% (7/90)        
+2022-06-22T09:30:57.1084280Z remote: Counting objects:   8% (8/90)        
+2022-06-22T09:30:57.1114634Z remote: Counting objects:  10% (9/90)        
+2022-06-22T09:30:57.1115336Z remote: Counting objects:  11% (10/90)        
+2022-06-22T09:30:57.1115749Z remote: Counting objects:  12% (11/90)        
+2022-06-22T09:30:57.1116457Z remote: Counting objects:  13% (12/90)        
+2022-06-22T09:30:57.1116812Z remote: Counting objects:  14% (13/90)        
+2022-06-22T09:30:57.1117166Z remote: Counting objects:  15% (14/90)        
+2022-06-22T09:30:57.1117418Z remote: Counting objects:  16% (15/90)        
+2022-06-22T09:30:57.1117672Z remote: Counting objects:  17% (16/90)        
+2022-06-22T09:30:57.1117907Z remote: Counting objects:  18% (17/90)        
+2022-06-22T09:30:57.1118146Z remote: Counting objects:  20% (18/90)        
+2022-06-22T09:30:57.1118400Z remote: Counting objects:  21% (19/90)        
+2022-06-22T09:30:57.1118628Z remote: Counting objects:  22% (20/90)        
+2022-06-22T09:30:57.1118874Z remote: Counting objects:  23% (21/90)        
+2022-06-22T09:30:57.1119135Z remote: Counting objects:  24% (22/90)        
+2022-06-22T09:30:57.1119376Z remote: Counting objects:  25% (23/90)        
+2022-06-22T09:30:57.1119622Z remote: Counting objects:  26% (24/90)        
+2022-06-22T09:30:57.1120255Z remote: Counting objects:  27% (25/90)        
+2022-06-22T09:30:57.1120510Z remote: Counting objects:  28% (26/90)        
+2022-06-22T09:30:57.1120760Z remote: Counting objects:  30% (27/90)        
+2022-06-22T09:30:57.1121195Z remote: Counting objects:  31% (28/90)        
+2022-06-22T09:30:57.1121477Z remote: Counting objects:  32% (29/90)        
+2022-06-22T09:30:57.1121716Z remote: Counting objects:  33% (30/90)        
+2022-06-22T09:30:57.1121956Z remote: Counting objects:  34% (31/90)        
+2022-06-22T09:30:57.1122205Z remote: Counting objects:  35% (32/90)        
+2022-06-22T09:30:57.1122445Z remote: Counting objects:  36% (33/90)        
+2022-06-22T09:30:57.1122686Z remote: Counting objects:  37% (34/90)        
+2022-06-22T09:30:57.1122930Z remote: Counting objects:  38% (35/90)        
+2022-06-22T09:30:57.1123161Z remote: Counting objects:  40% (36/90)        
+2022-06-22T09:30:57.1123405Z remote: Counting objects:  41% (37/90)        
+2022-06-22T09:30:57.1123649Z remote: Counting objects:  42% (38/90)        
+2022-06-22T09:30:57.1123906Z remote: Counting objects:  43% (39/90)        
+2022-06-22T09:30:57.1124144Z remote: Counting objects:  44% (40/90)        
+2022-06-22T09:30:57.1124416Z remote: Counting objects:  45% (41/90)        
+2022-06-22T09:30:57.1124672Z remote: Counting objects:  46% (42/90)        
+2022-06-22T09:30:57.1124910Z remote: Counting objects:  47% (43/90)        
+2022-06-22T09:30:57.1125164Z remote: Counting objects:  48% (44/90)        
+2022-06-22T09:30:57.1125410Z remote: Counting objects:  50% (45/90)        
+2022-06-22T09:30:57.1125647Z remote: Counting objects:  51% (46/90)        
+2022-06-22T09:30:57.1125893Z remote: Counting objects:  52% (47/90)        
+2022-06-22T09:30:57.1126143Z remote: Counting objects:  53% (48/90)        
+2022-06-22T09:30:57.1126375Z remote: Counting objects:  54% (49/90)        
+2022-06-22T09:30:57.1126615Z remote: Counting objects:  55% (50/90)        
+2022-06-22T09:30:57.1126849Z remote: Counting objects:  56% (51/90)        
+2022-06-22T09:30:57.1127097Z remote: Counting objects:  57% (52/90)        
+2022-06-22T09:30:57.1127321Z remote: Counting objects:  58% (53/90)        
+2022-06-22T09:30:57.1127553Z remote: Counting objects:  60% (54/90)        
+2022-06-22T09:30:57.1127960Z remote: Counting objects:  61% (55/90)        
+2022-06-22T09:30:57.1128188Z remote: Counting objects:  62% (56/90)        
+2022-06-22T09:30:57.1128422Z remote: Counting objects:  63% (57/90)        
+2022-06-22T09:30:57.1128666Z remote: Counting objects:  64% (58/90)        
+2022-06-22T09:30:57.1128888Z remote: Counting objects:  65% (59/90)        
+2022-06-22T09:30:57.1129124Z remote: Counting objects:  66% (60/90)        
+2022-06-22T09:30:57.1129360Z remote: Counting objects:  67% (61/90)        
+2022-06-22T09:30:57.1129583Z remote: Counting objects:  68% (62/90)        
+2022-06-22T09:30:57.1129828Z remote: Counting objects:  70% (63/90)        
+2022-06-22T09:30:57.1130059Z remote: Counting objects:  71% (64/90)        
+2022-06-22T09:30:57.1130329Z remote: Counting objects:  72% (65/90)        
+2022-06-22T09:30:57.1130576Z remote: Counting objects:  73% (66/90)        
+2022-06-22T09:30:57.1130799Z remote: Counting objects:  74% (67/90)        
+2022-06-22T09:30:57.1131043Z remote: Counting objects:  75% (68/90)        
+2022-06-22T09:30:57.1131286Z remote: Counting objects:  76% (69/90)        
+2022-06-22T09:30:57.1131511Z remote: Counting objects:  77% (70/90)        
+2022-06-22T09:30:57.1131746Z remote: Counting objects:  78% (71/90)        
+2022-06-22T09:30:57.1131988Z remote: Counting objects:  80% (72/90)        
+2022-06-22T09:30:57.1132211Z remote: Counting objects:  81% (73/90)        
+2022-06-22T09:30:57.1132451Z remote: Counting objects:  82% (74/90)        
+2022-06-22T09:30:57.1132682Z remote: Counting objects:  83% (75/90)        
+2022-06-22T09:30:57.1132912Z remote: Counting objects:  84% (76/90)        
+2022-06-22T09:30:57.1133155Z remote: Counting objects:  85% (77/90)        
+2022-06-22T09:30:57.1133390Z remote: Counting objects:  86% (78/90)        
+2022-06-22T09:30:57.1133704Z remote: Counting objects:  87% (79/90)        
+2022-06-22T09:30:57.1133923Z remote: Counting objects:  88% (80/90)        
+2022-06-22T09:30:57.1134158Z remote: Counting objects:  90% (81/90)        
+2022-06-22T09:30:57.1134393Z remote: Counting objects:  91% (82/90)        
+2022-06-22T09:30:57.1134609Z remote: Counting objects:  92% (83/90)        
+2022-06-22T09:30:57.1134840Z remote: Counting objects:  93% (84/90)        
+2022-06-22T09:30:57.1135071Z remote: Counting objects:  94% (85/90)        
+2022-06-22T09:30:57.1135295Z remote: Counting objects:  95% (86/90)        
+2022-06-22T09:30:57.1135521Z remote: Counting objects:  96% (87/90)        
+2022-06-22T09:30:57.1135755Z remote: Counting objects:  97% (88/90)        
+2022-06-22T09:30:57.1135978Z remote: Counting objects:  98% (89/90)        
+2022-06-22T09:30:57.1136213Z remote: Counting objects: 100% (90/90)        
+2022-06-22T09:30:57.1136466Z remote: Counting objects: 100% (90/90), done.        
+2022-06-22T09:30:57.1136758Z remote: Compressing objects:   1% (1/78)        
+2022-06-22T09:30:57.1137027Z remote: Compressing objects:   2% (2/78)        
+2022-06-22T09:30:57.1137279Z remote: Compressing objects:   3% (3/78)        
+2022-06-22T09:30:57.1137540Z remote: Compressing objects:   5% (4/78)        
+2022-06-22T09:30:57.1137788Z remote: Compressing objects:   6% (5/78)        
+2022-06-22T09:30:57.1138038Z remote: Compressing objects:   7% (6/78)        
+2022-06-22T09:30:57.1138300Z remote: Compressing objects:   8% (7/78)        
+2022-06-22T09:30:57.1138536Z remote: Compressing objects:  10% (8/78)        
+2022-06-22T09:30:57.1138778Z remote: Compressing objects:  11% (9/78)        
+2022-06-22T09:30:57.1139038Z remote: Compressing objects:  12% (10/78)        
+2022-06-22T09:30:57.1139295Z remote: Compressing objects:  14% (11/78)        
+2022-06-22T09:30:57.1139550Z remote: Compressing objects:  15% (12/78)        
+2022-06-22T09:30:57.1139811Z remote: Compressing objects:  16% (13/78)        
+2022-06-22T09:30:57.1140061Z remote: Compressing objects:  17% (14/78)        
+2022-06-22T09:30:57.1140304Z remote: Compressing objects:  19% (15/78)        
+2022-06-22T09:30:57.1140558Z remote: Compressing objects:  20% (16/78)        
+2022-06-22T09:30:57.1140878Z remote: Compressing objects:  21% (17/78)        
+2022-06-22T09:30:57.1141124Z remote: Compressing objects:  23% (18/78)        
+2022-06-22T09:30:57.1141369Z remote: Compressing objects:  24% (19/78)        
+2022-06-22T09:30:57.1365770Z remote: Compressing objects:  25% (20/78)        
+2022-06-22T09:30:57.1366209Z remote: Compressing objects:  26% (21/78)        
+2022-06-22T09:30:57.1366474Z remote: Compressing objects:  28% (22/78)        
+2022-06-22T09:30:57.1366738Z remote: Compressing objects:  29% (23/78)        
+2022-06-22T09:30:57.1366998Z remote: Compressing objects:  30% (24/78)        
+2022-06-22T09:30:57.1367244Z remote: Compressing objects:  32% (25/78)        
+2022-06-22T09:30:57.1367500Z remote: Compressing objects:  33% (26/78)        
+2022-06-22T09:30:57.1367755Z remote: Compressing objects:  34% (27/78)        
+2022-06-22T09:30:57.1368037Z remote: Compressing objects:  35% (28/78)        
+2022-06-22T09:30:57.1368280Z remote: Compressing objects:  37% (29/78)        
+2022-06-22T09:30:57.1368541Z remote: Compressing objects:  38% (30/78)        
+2022-06-22T09:30:57.1368802Z remote: Compressing objects:  39% (31/78)        
+2022-06-22T09:30:57.1369038Z remote: Compressing objects:  41% (32/78)        
+2022-06-22T09:30:57.1369282Z remote: Compressing objects:  42% (33/78)        
+2022-06-22T09:30:57.1369531Z remote: Compressing objects:  43% (34/78)        
+2022-06-22T09:30:57.1369767Z remote: Compressing objects:  44% (35/78)        
+2022-06-22T09:30:57.1370016Z remote: Compressing objects:  46% (36/78)        
+2022-06-22T09:30:57.1370262Z remote: Compressing objects:  47% (37/78)        
+2022-06-22T09:30:57.1370499Z remote: Compressing objects:  48% (38/78)        
+2022-06-22T09:30:57.1370757Z remote: Compressing objects:  50% (39/78)        
+2022-06-22T09:30:57.1371017Z remote: Compressing objects:  51% (40/78)        
+2022-06-22T09:30:57.1371659Z remote: Compressing objects:  52% (41/78)        
+2022-06-22T09:30:57.1371913Z remote: Compressing objects:  53% (42/78)        
+2022-06-22T09:30:57.1372165Z remote: Compressing objects:  55% (43/78)        
+2022-06-22T09:30:57.1372417Z remote: Compressing objects:  56% (44/78)        
+2022-06-22T09:30:57.1372654Z remote: Compressing objects:  57% (45/78)        
+2022-06-22T09:30:57.1372905Z remote: Compressing objects:  58% (46/78)        
+2022-06-22T09:30:57.1373151Z remote: Compressing objects:  60% (47/78)        
+2022-06-22T09:30:57.1373390Z remote: Compressing objects:  61% (48/78)        
+2022-06-22T09:30:57.1373646Z remote: Compressing objects:  62% (49/78)        
+2022-06-22T09:30:57.1373889Z remote: Compressing objects:  64% (50/78)        
+2022-06-22T09:30:57.1374131Z remote: Compressing objects:  65% (51/78)        
+2022-06-22T09:30:57.1374373Z remote: Compressing objects:  66% (52/78)        
+2022-06-22T09:30:57.1374629Z remote: Compressing objects:  67% (53/78)        
+2022-06-22T09:30:57.1374879Z remote: Compressing objects:  69% (54/78)        
+2022-06-22T09:30:57.1375111Z remote: Compressing objects:  70% (55/78)        
+2022-06-22T09:30:57.1375355Z remote: Compressing objects:  71% (56/78)        
+2022-06-22T09:30:57.1375603Z remote: Compressing objects:  73% (57/78)        
+2022-06-22T09:30:57.1375843Z remote: Compressing objects:  74% (58/78)        
+2022-06-22T09:30:57.1376089Z remote: Compressing objects:  75% (59/78)        
+2022-06-22T09:30:57.1376340Z remote: Compressing objects:  76% (60/78)        
+2022-06-22T09:30:57.1376569Z remote: Compressing objects:  78% (61/78)        
+2022-06-22T09:30:57.1376818Z remote: Compressing objects:  79% (62/78)        
+2022-06-22T09:30:57.1377062Z remote: Compressing objects:  80% (63/78)        
+2022-06-22T09:30:57.1377312Z remote: Compressing objects:  82% (64/78)        
+2022-06-22T09:30:57.1377547Z remote: Compressing objects:  83% (65/78)        
+2022-06-22T09:30:57.1377805Z remote: Compressing objects:  84% (66/78)        
+2022-06-22T09:30:57.1378044Z remote: Compressing objects:  85% (67/78)        
+2022-06-22T09:30:57.1378281Z remote: Compressing objects:  87% (68/78)        
+2022-06-22T09:30:57.1378686Z remote: Compressing objects:  88% (69/78)        
+2022-06-22T09:30:57.1378937Z remote: Compressing objects:  89% (70/78)        
+2022-06-22T09:30:57.1379177Z remote: Compressing objects:  91% (71/78)        
+2022-06-22T09:30:57.1379427Z remote: Compressing objects:  92% (72/78)        
+2022-06-22T09:30:57.1379681Z remote: Compressing objects:  93% (73/78)        
+2022-06-22T09:30:57.1379932Z remote: Compressing objects:  94% (74/78)        
+2022-06-22T09:30:57.1380173Z remote: Compressing objects:  96% (75/78)        
+2022-06-22T09:30:57.1380420Z remote: Compressing objects:  97% (76/78)        
+2022-06-22T09:30:57.1380675Z remote: Compressing objects:  98% (77/78)        
+2022-06-22T09:30:57.1380918Z remote: Compressing objects: 100% (78/78)        
+2022-06-22T09:30:57.1381193Z remote: Compressing objects: 100% (78/78), done.        
+2022-06-22T09:30:57.1967365Z remote: Total 90 (delta 16), reused 50 (delta 8), pack-reused 0        
+2022-06-22T09:30:57.2154871Z From https://github.com/belvo-finance/belvo-python
+2022-06-22T09:30:57.2157861Z  * [new ref]         879334b633b99fb3eb4f2ffe5e0897814c2dda51 -> origin/master
+2022-06-22T09:30:57.2158541Z ##[endgroup]
+2022-06-22T09:30:57.2158941Z ##[group]Determining the checkout info
+2022-06-22T09:30:57.2159339Z ##[endgroup]
+2022-06-22T09:30:57.2159709Z ##[group]Checking out the ref
+2022-06-22T09:30:57.2160140Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2022-06-22T09:30:57.2269674Z Reset branch 'master'
+2022-06-22T09:30:57.2270303Z branch 'master' set up to track 'origin/master'.
+2022-06-22T09:30:57.2277811Z ##[endgroup]
+2022-06-22T09:30:57.2329778Z [command]/usr/bin/git log -1 --format='%H'
+2022-06-22T09:30:57.2365106Z '879334b633b99fb3eb4f2ffe5e0897814c2dda51'

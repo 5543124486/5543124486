@@ -1,0 +1,6 @@
+2022-06-22T09:30:57.2666408Z ##[group]Run actions/setup-python@v3
+2022-06-22T09:30:57.2666654Z with:
+2022-06-22T09:30:57.2667240Z   python-version: 3.x
+2022-06-22T09:30:57.2667592Z   token: ***
+2022-06-22T09:30:57.2667768Z ##[endgroup]
+2022-06-22T09:30:57.5696303Z Successfully setup CPython (3.10.5)

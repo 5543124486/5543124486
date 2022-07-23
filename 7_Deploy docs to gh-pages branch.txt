@@ -1,0 +1,105 @@
+2022-06-22T09:31:04.2535914Z ##[group]Run peaceiris/actions-gh-pages@v3
+2022-06-22T09:31:04.2536175Z with:
+2022-06-22T09:31:04.2536548Z   github_token: ***
+2022-06-22T09:31:04.2536754Z   publish_dir: ./docs
+2022-06-22T09:31:04.2536955Z   publish_branch: gh-pages
+2022-06-22T09:31:04.2537208Z   allow_empty_commit: false
+2022-06-22T09:31:04.2537421Z   keep_files: false
+2022-06-22T09:31:04.2537616Z   force_orphan: false
+2022-06-22T09:31:04.2537825Z   enable_jekyll: false
+2022-06-22T09:31:04.2538033Z   disable_nojekyll: false
+2022-06-22T09:31:04.2538234Z   exclude_assets: .github
+2022-06-22T09:31:04.2538465Z env:
+2022-06-22T09:31:04.2538725Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.5/x64
+2022-06-22T09:31:04.2539053Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.5/x64/lib
+2022-06-22T09:31:04.2539290Z ##[endgroup]
+2022-06-22T09:31:04.3345753Z [INFO] Usage https://github.com/peaceiris/actions-gh-pages#readme
+2022-06-22T09:31:04.3352671Z ##[group]Dump inputs
+2022-06-22T09:31:04.3353255Z [INFO] GithubToken: true
+2022-06-22T09:31:04.3354231Z [INFO] PublishBranch: gh-pages
+2022-06-22T09:31:04.3354555Z [INFO] PublishDir: ./docs
+2022-06-22T09:31:04.3354790Z [INFO] DestinationDir: 
+2022-06-22T09:31:04.3355027Z [INFO] ExternalRepository: 
+2022-06-22T09:31:04.3355260Z [INFO] AllowEmptyCommit: false
+2022-06-22T09:31:04.3355490Z [INFO] KeepFiles: false
+2022-06-22T09:31:04.3355713Z [INFO] ForceOrphan: false
+2022-06-22T09:31:04.3355914Z [INFO] UserName: 
+2022-06-22T09:31:04.3356107Z [INFO] UserEmail: 
+2022-06-22T09:31:04.3356309Z [INFO] CommitMessage: 
+2022-06-22T09:31:04.3356517Z [INFO] FullCommitMessage: 
+2022-06-22T09:31:04.3356723Z [INFO] TagName: 
+2022-06-22T09:31:04.3356922Z [INFO] TagMessage: 
+2022-06-22T09:31:04.3357165Z [INFO] EnableJekyll (DisableNoJekyll): false
+2022-06-22T09:31:04.3357393Z [INFO] CNAME: 
+2022-06-22T09:31:04.3357609Z [INFO] ExcludeAssets .github
+2022-06-22T09:31:04.3357999Z 
+2022-06-22T09:31:04.3358545Z ##[endgroup]
+2022-06-22T09:31:04.3365458Z ##[group]Setup auth token
+2022-06-22T09:31:04.3367134Z [INFO] setup GITHUB_TOKEN
+2022-06-22T09:31:04.3374065Z ##[endgroup]
+2022-06-22T09:31:04.3374674Z ##[group]Prepare publishing assets
+2022-06-22T09:31:04.3378041Z [INFO] ForceOrphan: false
+2022-06-22T09:31:04.3424376Z [command]/usr/bin/git clone --depth=1 --single-branch --branch gh-pages ***github.com/belvo-finance/belvo-python.git /home/runner/actions_github_pages_1655890264337
+2022-06-22T09:31:04.3466130Z Cloning into '/home/runner/actions_github_pages_1655890264337'...
+2022-06-22T09:31:05.0509945Z [INFO] clean up /home/runner/actions_github_pages_1655890264337
+2022-06-22T09:31:05.0510350Z [INFO] chdir /home/runner/actions_github_pages_1655890264337
+2022-06-22T09:31:05.0530151Z [command]/usr/bin/git rm -r --ignore-unmatch *
+2022-06-22T09:31:05.0788904Z rm '.nojekyll'
+2022-06-22T09:31:05.0789523Z rm 'belvo.html'
+2022-06-22T09:31:05.0790724Z rm 'belvo/client.html'
+2022-06-22T09:31:05.0791169Z rm 'belvo/enums.html'
+2022-06-22T09:31:05.0791665Z rm 'belvo/exceptions.html'
+2022-06-22T09:31:05.0792536Z rm 'belvo/http.html'
+2022-06-22T09:31:05.0792920Z rm 'belvo/investments.html'
+2022-06-22T09:31:05.0793251Z rm 'belvo/investments/portfolios.html'
+2022-06-22T09:31:05.0793570Z rm 'belvo/investments/transactions.html'
+2022-06-22T09:31:05.0793856Z rm 'belvo/resources.html'
+2022-06-22T09:31:05.0794142Z rm 'belvo/resources/accounts.html'
+2022-06-22T09:31:05.0794423Z rm 'belvo/resources/balances.html'
+2022-06-22T09:31:05.0794705Z rm 'belvo/resources/base.html'
+2022-06-22T09:31:05.0794993Z rm 'belvo/resources/incomes.html'
+2022-06-22T09:31:05.0795305Z rm 'belvo/resources/institutions.html'
+2022-06-22T09:31:05.0795601Z rm 'belvo/resources/invoices.html'
+2022-06-22T09:31:05.0795905Z rm 'belvo/resources/links.html'
+2022-06-22T09:31:05.0796210Z rm 'belvo/resources/owners.html'
+2022-06-22T09:31:05.0796533Z rm 'belvo/resources/recurring_expenses.html'
+2022-06-22T09:31:05.0796856Z rm 'belvo/resources/risk_insights.html'
+2022-06-22T09:31:05.0797190Z rm 'belvo/resources/statements.html'
+2022-06-22T09:31:05.0797800Z rm 'belvo/resources/tax_compliance_status.html'
+2022-06-22T09:31:05.0798295Z rm 'belvo/resources/tax_retentions.html'
+2022-06-22T09:31:05.0798638Z rm 'belvo/resources/tax_returns.html'
+2022-06-22T09:31:05.0798955Z rm 'belvo/resources/tax_status.html'
+2022-06-22T09:31:05.0799275Z rm 'belvo/resources/transactions.html'
+2022-06-22T09:31:05.0799579Z rm 'belvo/resources/widget_token.html'
+2022-06-22T09:31:05.0799846Z rm 'belvo/utils.html'
+2022-06-22T09:31:05.0800098Z rm 'index.html'
+2022-06-22T09:31:05.0800335Z rm 'index.md'
+2022-06-22T09:31:05.0800563Z rm 'resources.md'
+2022-06-22T09:31:05.0800810Z rm 'search.js'
+2022-06-22T09:31:05.0801049Z rm 'sessions.md'
+2022-06-22T09:31:05.0806774Z [INFO] chdir /home/runner/actions_github_pages_1655890264337
+2022-06-22T09:31:05.0807147Z [INFO] prepare publishing assets
+2022-06-22T09:31:05.0809892Z [INFO] copy /home/runner/work/belvo-python/belvo-python/docs to /home/runner/actions_github_pages_1655890264337
+2022-06-22T09:31:05.0973997Z cp: no such file or directory: /home/runner/work/belvo-python/belvo-python/docs/.*
+2022-06-22T09:31:05.0976471Z [INFO] delete excluded assets
+2022-06-22T09:31:05.1010355Z rm: no paths given
+2022-06-22T09:31:05.1012509Z [INFO] Created /home/runner/actions_github_pages_1655890264337/.nojekyll
+2022-06-22T09:31:05.1021552Z ##[endgroup]
+2022-06-22T09:31:05.1022192Z ##[group]Setup Git config
+2022-06-22T09:31:05.1029229Z [command]/usr/bin/git remote rm origin
+2022-06-22T09:31:05.1112665Z [command]/usr/bin/git remote add origin ***github.com/belvo-finance/belvo-python.git
+2022-06-22T09:31:05.1171835Z [command]/usr/bin/git add --all
+2022-06-22T09:31:05.1345986Z [command]/usr/bin/git config user.name GeoffreyVanderCruyssen
+2022-06-22T09:31:05.1401187Z [command]/usr/bin/git config user.email GeoffreyVanderCruyssen@users.noreply.github.com
+2022-06-22T09:31:05.1437298Z ##[endgroup]
+2022-06-22T09:31:05.1437960Z ##[group]Create a commit
+2022-06-22T09:31:05.1456817Z [command]/usr/bin/git commit -m deploy: 879334b633b99fb3eb4f2ffe5e0897814c2dda51
+2022-06-22T09:31:05.1648094Z [gh-pages 0bf846d] deploy: 879334b633b99fb3eb4f2ffe5e0897814c2dda51
+2022-06-22T09:31:05.1648771Z  1 file changed, 1 insertion(+), 1 deletion(-)
+2022-06-22T09:31:05.1651287Z ##[endgroup]
+2022-06-22T09:31:05.1651788Z ##[group]Push the commit or tag
+2022-06-22T09:31:05.1670066Z [command]/usr/bin/git push origin gh-pages
+2022-06-22T09:31:06.0607374Z To https://github.com/belvo-finance/belvo-python.git
+2022-06-22T09:31:06.0608237Z    e9fa71d..0bf846d  gh-pages -> gh-pages
+2022-06-22T09:31:06.0652504Z ##[endgroup]
+2022-06-22T09:31:06.0653091Z [INFO] Action successfully completed

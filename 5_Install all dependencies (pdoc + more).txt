@@ -1,0 +1,20 @@
+2022-06-22T09:30:59.7128342Z ##[group]Run pip install pdoc
+2022-06-22T09:30:59.7128626Z [36;1mpip install pdoc[0m
+2022-06-22T09:30:59.7184339Z shell: /usr/bin/bash -e {0}
+2022-06-22T09:30:59.7184570Z env:
+2022-06-22T09:30:59.7184837Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.5/x64
+2022-06-22T09:30:59.7185155Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.5/x64/lib
+2022-06-22T09:30:59.7185415Z ##[endgroup]
+2022-06-22T09:31:00.4336938Z Collecting pdoc
+2022-06-22T09:31:00.4814283Z   Downloading pdoc-12.0.2-py3-none-any.whl (124 kB)
+2022-06-22T09:31:00.5017945Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.8/124.8 kB 6.8 MB/s eta 0:00:00
+2022-06-22T09:31:00.5974162Z Collecting MarkupSafe
+2022-06-22T09:31:00.6081365Z   Downloading MarkupSafe-2.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+2022-06-22T09:31:00.6515719Z Collecting Jinja2>=2.11.0
+2022-06-22T09:31:00.6631018Z   Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+2022-06-22T09:31:00.6704085Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 32.9 MB/s eta 0:00:00
+2022-06-22T09:31:00.7268061Z Collecting pygments>=2.12.0
+2022-06-22T09:31:00.7424701Z   Downloading Pygments-2.12.0-py3-none-any.whl (1.1 MB)
+2022-06-22T09:31:00.7673071Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 50.3 MB/s eta 0:00:00
+2022-06-22T09:31:00.8452493Z Installing collected packages: pygments, MarkupSafe, Jinja2, pdoc
+2022-06-22T09:31:01.6937914Z Successfully installed Jinja2-3.1.2 MarkupSafe-2.1.1 pdoc-12.0.2 pygments-2.12.0

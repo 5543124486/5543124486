@@ -1,0 +1,37 @@
+2022-06-22T09:30:53.2123000Z Current runner version: '2.293.0'
+2022-06-22T09:30:53.2154700Z ##[group]Operating System
+2022-06-22T09:30:53.2155355Z Ubuntu
+2022-06-22T09:30:53.2155647Z 20.04.4
+2022-06-22T09:30:53.2156030Z LTS
+2022-06-22T09:30:53.2156285Z ##[endgroup]
+2022-06-22T09:30:53.2156631Z ##[group]Virtual Environment
+2022-06-22T09:30:53.2157016Z Environment: ubuntu-20.04
+2022-06-22T09:30:53.2157325Z Version: 20220614.0
+2022-06-22T09:30:53.2157927Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20220614.0/images/linux/Ubuntu2004-Readme.md
+2022-06-22T09:30:53.2158641Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20220614.0
+2022-06-22T09:30:53.2159118Z ##[endgroup]
+2022-06-22T09:30:53.2159433Z ##[group]Virtual Environment Provisioner
+2022-06-22T09:30:53.2159828Z 1.0.0.0-main-20220531-1
+2022-06-22T09:30:53.2160190Z ##[endgroup]
+2022-06-22T09:30:53.2161173Z ##[group]GITHUB_TOKEN Permissions
+2022-06-22T09:30:53.2161915Z Actions: write
+2022-06-22T09:30:53.2162256Z Checks: write
+2022-06-22T09:30:53.2162858Z Contents: write
+2022-06-22T09:30:53.2163191Z Deployments: write
+2022-06-22T09:30:53.2163542Z Discussions: write
+2022-06-22T09:30:53.2163876Z Issues: write
+2022-06-22T09:30:53.2164142Z Metadata: read
+2022-06-22T09:30:53.2164467Z Packages: write
+2022-06-22T09:30:53.2164803Z Pages: write
+2022-06-22T09:30:53.2165079Z PullRequests: write
+2022-06-22T09:30:53.2165465Z RepositoryProjects: write
+2022-06-22T09:30:53.2165844Z SecurityEvents: write
+2022-06-22T09:30:53.2166139Z Statuses: write
+2022-06-22T09:30:53.2166465Z ##[endgroup]
+2022-06-22T09:30:53.2170695Z Secret source: Actions
+2022-06-22T09:30:53.2171262Z Prepare workflow directory
+2022-06-22T09:30:53.3109194Z Prepare all required actions
+2022-06-22T09:30:53.3310313Z Getting action download info
+2022-06-22T09:30:53.6124162Z Download action repository 'actions/checkout@v2' (SHA:7884fcad6b5d53d10323aee724dc68d8b9096a2e)
+2022-06-22T09:30:54.5055679Z Download action repository 'actions/setup-python@v3' (SHA:98f2ad02fd48d057ee3b4d4f66525b231c3e52b6)
+2022-06-22T09:30:55.3244546Z Download action repository 'peaceiris/actions-gh-pages@v3' (SHA:068dc23d9710f1ba62e86896f84735d869951305)

@@ -1,0 +1,12 @@
+2022-06-22T09:31:06.2344398Z Post job cleanup.
+2022-06-22T09:31:06.3679489Z [command]/usr/bin/git version
+2022-06-22T09:31:06.3730648Z git version 2.36.1
+2022-06-22T09:31:06.3772456Z Temporarily overriding HOME='/home/runner/work/_temp/2dfa6aa8-324c-4724-99d2-045abd26ab58' before making global git config changes
+2022-06-22T09:31:06.3773317Z Adding repository directory to the temporary git global config as a safe directory
+2022-06-22T09:31:06.3780744Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/belvo-python/belvo-python
+2022-06-22T09:31:06.3832140Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2022-06-22T09:31:06.3873281Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :
+2022-06-22T09:31:06.4197059Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2022-06-22T09:31:06.4275870Z http.https://github.com/.extraheader
+2022-06-22T09:31:06.4289154Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2022-06-22T09:31:06.4359208Z [command]/usr/bin/git submodule foreach --recursive git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :
